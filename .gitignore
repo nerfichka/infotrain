@@ -1,0 +1,10 @@
+@"
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+.idea/
+.vscode/
+ege_tasks.json
+"@ | Out-File -FilePath .gitignore -Encoding UTF8
