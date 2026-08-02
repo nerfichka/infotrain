@@ -37,7 +37,7 @@ def check_base():
 def start_information():
     N_error_flag = False
     os.system('cls')
-    console.print(Panel.fit("Выберите задания для тренировки.\nenter — все задания.",box=DOUBLE,title="egeshechka", border_style="deep_sky_blue4"))
+    console.print(Panel.fit("Выберите задания для тренировки.\nenter — все задания.",box=DOUBLE,title="infotrain", border_style="deep_sky_blue4"))
     console.print("[dim][#03a59d]Пример:[/#03a59d] 1,2,3,6,18 [/dim]\n [#03a59d]Управление: [/#03a59d]\n [#03a59d]enter:[/#03a59d] сохранить/изменить ответ \n [#03a59d]⭠/⭢ :[/#03a59d] переключение между заданиями \n [#03a59d]ESC: [/#03a59d]завершение заданий и переход к результатам")
     console.print("[deep_sky_blue4]Номера: [/deep_sky_blue4]", end='')
     select_ege_quest = input().split(',')
