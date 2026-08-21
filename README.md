@@ -10,8 +10,8 @@
 
 Оффлайн-тренажёр для подготовки к ЕГЭ по информатике.
 
-<img width="1404" height="852" alt="Снимок экрана от 2026-08-21 23-14-32" src="https://github.com/user-attachments/assets/bb51a1fc-03eb-4a13-bc85-1cb7837ef673" />
-
+<img width="712" height="295" alt="Снимок экрана от 2026-08-21 23-14-32" src="https://github.com/user-attachments/assets/bb51a1fc-03eb-4a13-bc85-1cb7837ef673" />
+---
 <img width="712" height="295" alt="Снимок экрана от 2026-08-21 23-14-57" src="https://github.com/user-attachments/assets/27f39c09-6321-40b6-a9c9-51095e8f3654" />
 
 
