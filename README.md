@@ -1,11 +1,14 @@
-![Python](https://img.shields.io/badge/python-3.10-blue)
-![Windows](https://img.shields.io/badge/Windows-only-grey)
+![Python](https://img.shields.io/badge/python-3.10-green)
+![Windows](https://img.shields.io/badge/Windows-blue)
+![Linux](https://img.shields.io/badge/Linux-red)
+![macOS](https://img.shields.io/badge/macOS-black)
+
+
+
 # infotrain
 
 Оффлайн-тренажёр для подготовки к ЕГЭ по информатике.
-
-Работает только на Windows (используется msvcrt для управления с клавиатуры).
-![](image.png)
+![image](https://github.com)
 
 ## Установка
 ```bush
