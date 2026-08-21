@@ -1,3 +1,4 @@
+
 ![Python](https://img.shields.io/badge/python-3.10-green)
 ![Windows](https://img.shields.io/badge/Windows-blue)
 ![Linux](https://img.shields.io/badge/Linux-red)
@@ -8,7 +9,7 @@
 # infotrain
 
 Оффлайн-тренажёр для подготовки к ЕГЭ по информатике.
-![image](https://github.com)
+![image](<img width="712" height="295" alt="Снимок экрана от 2026-08-21 23-14-57" src="https://github.com/user-attachments/assets/144f8ad7-0954-4619-b9ee-ce01733b177b" />)
 
 ## Установка
 ```bush
