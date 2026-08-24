@@ -1,4 +1,3 @@
-import filter
 import parser
 import os
 import sys
@@ -57,7 +56,7 @@ def clear_screen():
     if platform_flag:
         os.system('cls')
     else:
-        print("\033[H\033[J", end="")
+        os.system('clear')
 def number_quest(task_dict,numbers, count):
     result = []
     counter = 0
@@ -73,11 +72,11 @@ def check_base():
         installation = input().lower()
         if installation == 'y':
             parser.pars_install()
-            task_parser = filter.loader('ege_tasks.json')
+            task_parser = parser.use_pars()
         else:
             exit()
     else:
-        task_parser = filter.loader('ege_tasks.json')
+        task_parser = parser.use_pars()
     clear_screen()
     return task_parser
 def start_information():
@@ -92,37 +91,34 @@ def start_information():
         select_ege_quest = [int(i) for i in range(1,28)]
 
     console.print("[deep_sky_blue4]Количество на номер: [/deep_sky_blue4]", end='')
-    try:
-        select_ege_nums = int(input())
-    except ValueError:
-        clear_screen()
-        console.print('[red]Скорее всего, вы указали неверное число. Попробуйте еще раз[/red]')
-        console.print(time.sleep(3))
-        select_ege_nums = 0
-        bk_information, count = start_information()
-        current_index = 0
+    while True:    
+        try:
+            select_ege_nums = int(input())
+            break
+        except ValueError:
+            clear_screen()
+            console.print('[red]Скорее всего, вы указали неверное число. Попробуйте еще раз[/red]')
+            console.print(time.sleep(3))
     out_filter = check_base()
     start_processing = number_quest(out_filter,select_ege_quest,select_ege_nums)
     if N_error_flag:
         return start_processing, len(start_processing)
     else:
         return start_processing, len(select_ege_quest) * select_ege_nums
-bk_information, count = start_information()
 current_index = 0
 answers = {}
 True_answers = {}
 end_information = {}
-try:
-    for i in range(count):
-        True_answers[i] = bk_information[i]['answer']
-except IndexError:
-    clear_screen()
-    console.print('[red]Скорее всего, вы указали неверные номера. Попробуйте еще раз[/red]')
-    console.print(time.sleep(3))
-    bk_information.clear()
-    count = 0
+while True:
     bk_information, count = start_information()
-    current_index = 0
+    try:
+        for i in range(count):
+            True_answers[i] = bk_information[i]['answer']
+        break
+    except IndexError:
+        clear_screen()
+        console.print('[red]Скорее всего, вы указали неверные номера. Попробуйте еще раз[/red]')
+        console.print(time.sleep(3))
 start_time = time.time()
 while True:
     clear_screen()
