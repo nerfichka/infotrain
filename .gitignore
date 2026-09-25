@@ -7,4 +7,5 @@ venv/
 .idea/
 .vscode/
 ege_tasks.json
+test.py
 "@ | Out-File -FilePath .gitignore -Encoding UTF8
