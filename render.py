@@ -12,7 +12,7 @@ def build_table_widget(table_rows):
     if not table_rows:
         return tbl
     column_count = max(len(r) for r in table_rows)
-    for _ in range(column_count):
+    for i in range(column_count):
         tbl.add_column(justify="center")
     for row in table_rows:
         padded_row = list(row) + [''] * (column_count - len(row))

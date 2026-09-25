@@ -1,11 +1,21 @@
-![Python](https://img.shields.io/badge/python-3.10-blue)
-![Windows](https://img.shields.io/badge/Windows-only-grey)
+
+![Python](https://img.shields.io/badge/python-3.10-green)
+![Windows](https://img.shields.io/badge/Windows-blue)
+![Linux](https://img.shields.io/badge/Linux-red)
+![macOS](https://img.shields.io/badge/macOS-black)
+
+
+
 # infotrain
 
 Оффлайн-тренажёр для подготовки к ЕГЭ по информатике.
 
-Работает только на Windows (используется msvcrt для управления с клавиатуры).
-![](image.png)
+<img width="712" height="295" alt="Снимок экрана от 2026-08-21 23-14-32" src="https://github.com/user-attachments/assets/bb51a1fc-03eb-4a13-bc85-1cb7837ef673" />
+
+---
+
+<img width="712" height="295" alt="Снимок экрана от 2026-08-21 23-14-57" src="https://github.com/user-attachments/assets/27f39c09-6321-40b6-a9c9-51095e8f3654" />
+
 
 ## Установка
 ```bush
@@ -20,17 +30,20 @@ pip install -r requirements.txt
 ```bush
 python main.py
 ```
-## Настройка фильтрации заданий по году
-
-В файле filter.py на 11 строке можно поменять год загрузки заданий. Найди 2024 и замени на нужный год (например, 2025). Пересоздавать JSON-файл с задачами не нужно.
-```python
-  if tasks_years >= 2024:  # поменяй на нужный год
-```
 ## Важно перед первым запуском
 
 Задачи скачиваются с сайта [kompege.ru](https://kompege.ru). Перед первым запуском нужно выключить VPN или включить российские сервера, иначе сайт не откроется и задачи не загрузятся.
 ## Управление
+### в меню:
+- tab — Изменение настройки в выбранных номерах при создании своего варианта 
 
+- Стрелки влево/вправо/вверх/вниз — управление
+
+- Enter — выбрать задачу, подтвердить выбор
+
+- ESC — выйти из программы
+
+### в Задачи:
 - Стрелки влево/вправо — переключение между заданиями
 
 - Enter — ввести или изменить ответ

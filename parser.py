@@ -6,11 +6,10 @@ from html_clean import clean_task_html
 def pars_install():
         all_tasks = []
         seen = set()
-        symw = ['|', '/', '-', '\\']
         for num in range(1, 27):
             URL = f"https://kompege.ru/api/v1/task/number/{num}"
             try:
-                print(f'Загрузка данных: {symw[len(all_tasks)%4]}', end='\r')
+                print(f'Загрузка данных: {num}', end='\r')
                 resp = requests.get(URL, headers={"User-Agent": "Mozilla/5.0"}, timeout=7)
                 data = resp.json()
 
